@@ -9,7 +9,7 @@ import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
-import { Telegram } from "react-bootstrap-icons";
+
 
 export const NavBar = () => {
 
@@ -53,13 +53,13 @@ export const NavBar = () => {
             <span className="navbar-text">
               <div className="social-icon">
                 {/* linkdin icon */}
-                <a href="#"><img src={linkdin} alt="" /></a>
+                <a href="https://linkdin.com/"><img src={linkdin} alt="" /></a>
                 {/* fb icon */}
-                <a href="#"><img src={facebook} alt="" /></a>
+                <a href="https://facebook.com/albin.binu.526/"><img src={facebook} alt="" /></a>
                 {/* instagram icon */}
                 <a href="https://instagram.com/albinbinu.me"><img src={instagram} alt="" /></a>
                 {/* tg icon */}
-                <a href="t.me/Albin_binu"><img src={tgicon} alt=""/></a>
+                <a href="t.me/Albin_binu"><img src={tgicon} alt="" /></a>
               </div>
               <HashLink to='#connect'>
                 <button className="vvd"><span>Let’s<span className="cnt"> Connect</span> </span></button>

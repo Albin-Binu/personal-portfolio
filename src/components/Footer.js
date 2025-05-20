@@ -17,14 +17,14 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon">
-             {/* linkdin icon */}
-                             <a href="#"><img src={linkdin} alt="" /></a>
-                             {/* fb icon */}
-                             <a href="#"><img src={facebook} alt="" /></a>
-                             {/* instagram icon */}
-                             <a href="https://instagram.com/albinbinu.me"><img src={instagram} alt="" /></a>
-                             {/* tg icon */}
-                             <a href="t.me/Albin_binu"><img src={tgicon} alt=""/></a>
+              {/* linkdin icon */}
+              <a href="https://linkdin.com"><img src={linkdin} alt="" /></a>
+              {/* fb icon */}
+              <a href="https://facebook.com/albin.binu.526/"><img src={facebook} alt="" /></a>
+              {/* instagram icon */}
+              <a href="https://instagram.com/albinbinu.me"><img src={instagram} alt="" /></a>
+              {/* tg icon */}
+              <a href="t.me/Albin_binu"><img src={tgicon} alt="" /></a>
             </div>
             <p>Copyright {currentYear}. All Rights Reserved</p>
           </Col>
