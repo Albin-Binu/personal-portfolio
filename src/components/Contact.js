@@ -42,6 +42,9 @@ export const Contact = () => {
       setStatus({ succes: false, message: 'Something went wrong, please try again later.'});
     }
   };
+   const notAvail = ()=>{
+    alert("not available in this moment");
+  }
 
   return (
     <section className="contact" id="connect">
@@ -75,7 +78,7 @@ export const Contact = () => {
                     </Col>
                     <Col size={12} className="px-1">
                       <textarea rows="6" value={formDetails.message} placeholder="Message" onChange={(e) => onFormUpdate('message', e.target.value)}></textarea>
-                      <button type="submit"><span>{buttonText}</span></button>
+                      <button type="submit" onClick={notAvail}><span>{buttonText}</span></button>
                     </Col>
                     {
                       status.message &&

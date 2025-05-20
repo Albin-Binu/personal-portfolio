@@ -20,6 +20,9 @@ export const Newsletter = ({ status, message, onValidated }) => {
   const clearFields = () => {
     setEmail('');
   }
+  const notAvail = ()=>{
+    alert("not available in this moment");
+  }
 
   return (
       <Col lg={12}>
@@ -35,7 +38,7 @@ export const Newsletter = ({ status, message, onValidated }) => {
               <form onSubmit={handleSubmit}>
                 <div className="new-email-bx">
                   <input value={email} type="email" onChange={(e) => setEmail(e.target.value)} placeholder="Email Address" />
-                  <button type="submit">Submit</button>
+                  <button type="submit" onClick={notAvail}>Submit</button>
                 </div>
               </form>
             </Col>
