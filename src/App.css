@@ -126,7 +126,8 @@ span.navbar-text {
 .social-icon a {
     width: 42px;
     height: 42px;
-    background: rgba(217, 217, 217, 0.1);
+    /* background: rgba(217, 217, 217, 0.1); */
+    background-color: white;
     display: inline-flex;
     border-radius: 50%;
     margin-right: 6px;
@@ -140,7 +141,7 @@ span.navbar-text {
     width: 42px;
     height: 42px;
     position: absolute;
-    background-color: #ffffff;
+    background-color: yellow;
     border-radius: 50%;
     transform: scale(0);
 	transition: 0.3s ease-in-out;
@@ -309,6 +310,9 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
     100% {
         transform: translateY(-20px);
     }
+}
+.wrap {
+  color: palevioletred;
 }
 .txt-rotate > .wrap {
   border-right: 0.08em solid #666;

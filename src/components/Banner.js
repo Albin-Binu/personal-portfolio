@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useMemo } from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import headerImg from "../assets/img/header-img.svg";
 import { ArrowRightCircle } from 'react-bootstrap-icons';
@@ -10,7 +10,7 @@ export const Banner = () => {
   const [isDeleting, setIsDeleting] = useState(false);
   const [text, setText] = useState('');
   const [delta, setDelta] = useState(300 - Math.random() * 100);
-  const toRotate = ["App Developer", "Web Designer", "Designer"];
+  const toRotate = useMemo(() => ["Developer", "Designer"], []);
   const period = 2000;
 
   useEffect(() => {
@@ -42,7 +42,7 @@ export const Banner = () => {
     }, delta);
 
     return () => clearInterval(ticker);
-  }, [text, delta, isDeleting, loopNum, toRotate]);
+  }, [text, delta, isDeleting, loopNum, toRotate, period]);
 
   return (
     <section className="banner" id="home">
@@ -53,14 +53,14 @@ export const Banner = () => {
               {({ isVisible }) =>
                 <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
                   <span className="tagline">Welcome to my Portfolio</span>
-                  <h1>
-                    Albin Binu. I'm{" "}
-                    <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "App Developer", "Web Designer", "Designer" ]'>
+                  <h2>
+                    Albin Binu. I'm a{" "}
+                    <span className="txt-rotate" dataPeriod="1000" data-rotate='[ "Developer", "Designer"]'>
                       <span className="wrap">{text}</span>
                     </span>
-                  </h1>
+                  </h2>
                   <p>
-                    My name is Albin Binu, and I'm a first-year computer science student at the College of Applied Science, Thiruvambadi. I love programming, but understanding the logic behind it is challenging for me. I dislike mathematics; consequently, grasping math-based logic is not my forte. Despite this, I am currently focusing on web development and object-oriented languages to enhance my skills.
+                    My name is Albin Binu, and I'm a second-year computer science student at the College of Applied Science, Thiruvambadi. I love programming, but understanding the logic behind it is challenging for me. I dislike mathematics; consequently, grasping math-based logic is not my forte. Despite this, I am currently focusing on web development and object-oriented languages to enhance my skills.
                   </p>
                   <button onClick={() => console.log('connect')}>
                     Let’s Connect <a href="#connect"><ArrowRightCircle size={25} /></a>

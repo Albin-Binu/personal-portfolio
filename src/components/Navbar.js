@@ -1,14 +1,15 @@
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 
-import navIcon1 from '../assets/img/nav-icon1.svg'; 
-import navIcon2 from '../assets/img/nav-icon2.svg';
-import navIcon3 from '../assets/img/nav-icon3.svg';
+import linkdin from '../assets/img/instagram.svg'
+import facebook from '../assets/img/facebook.svg';
+import instagram from '../assets/img/instagram.svg';
 import tgicon from '../assets/img/telegram.svg'
 import { HashLink } from 'react-router-hash-link';
 import {
   BrowserRouter as Router
 } from "react-router-dom";
+import { Telegram } from "react-bootstrap-icons";
 
 export const NavBar = () => {
 
@@ -38,7 +39,6 @@ export const NavBar = () => {
       <Navbar expand="md" className={scrolled ? "scrolled" : ""}>
         <Container>
           <Navbar.Brand href="/">
-           
             <h1 className="navbar-name">Albin<span className="navbar-lastname">Binu</span></h1>
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="basic-navbar-nav">
@@ -48,16 +48,16 @@ export const NavBar = () => {
             <Nav className="ms-auto">
               <Nav.Link href="#home" className={activeLink === 'home' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('home')}>Home</Nav.Link>
               <Nav.Link href="#skills" className={activeLink === 'skills' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('skills')}>Skills</Nav.Link>
-              <Nav.Link href="#projects" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Projects</Nav.Link>
+              <Nav.Link href="#connect" className={activeLink === 'projects' ? 'active navbar-link' : 'navbar-link'} onClick={() => onUpdateActiveLink('projects')}>Contact</Nav.Link>
             </Nav>
             <span className="navbar-text">
               <div className="social-icon">
                 {/* linkdin icon */}
-                <a href="#"><img src={navIcon1} alt="" /></a>
+                <a href="#"><img src={linkdin} alt="" /></a>
                 {/* fb icon */}
-                <a href="#"><img src={navIcon2} alt="" /></a>
+                <a href="#"><img src={facebook} alt="" /></a>
                 {/* instagram icon */}
-                <a href="https://instagram.com/albinbinu.me"><img src={navIcon3} alt="" /></a>
+                <a href="https://instagram.com/albinbinu.me"><img src={instagram} alt="" /></a>
                 {/* tg icon */}
                 <a href="t.me/Albin_binu"><img src={tgicon} alt=""/></a>
               </div>
