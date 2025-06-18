@@ -62,7 +62,7 @@ export const NavBar = () => {
                 <a href="t.me/Albin_binu"><img src={tgicon} alt="" /></a>
               </div>
               <HashLink to='#connect'>
-                <button className="vvd"><span>Let’s<span className="cnt"> Connect</span> </span></button>
+                <button className="vvd"><span>Download<span className="cnt"> CV</span> </span></button>
               </HashLink>
             </span>
           </Navbar.Collapse>
