@@ -62,7 +62,9 @@ export const NavBar = () => {
                 <a href="t.me/Albin_binu"><img src={tgicon} alt="" /></a>
               </div>
               <HashLink to='#connect'>
+                  <a href="https://albincv.netlify.app/">
                 <button className="vvd"><span>Download<span className="cnt"> CV</span> </span></button>
+                  </a>
               </HashLink>
             </span>
           </Navbar.Collapse>
